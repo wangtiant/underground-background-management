@@ -6,6 +6,7 @@
 import ProLayout from '@ant-design/pro-layout';
 import React, { useEffect } from 'react';
 import Link from 'umi/link';
+import router from 'umi/router';
 import { connect } from 'dva';
 import { formatMessage } from 'umi-plugin-react/locale';
 import Authorized from '@/utils/Authorized';
@@ -55,6 +56,9 @@ const BasicLayout = props => {
    */
 
   useEffect(() => {
+    if (localStorage.getItem('token')) {
+      router.push('/user/login');
+    }
     if (dispatch) {
       dispatch({
         type: 'user/fetchCurrent',
