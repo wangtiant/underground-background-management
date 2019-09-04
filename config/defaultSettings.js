@@ -12,5 +12,5 @@ export default {
   },
   title: '地府管理系统',
   pwa: false,
-  iconfontUrl: '',
+  iconfontUrl: '//at.alicdn.com/t/font_1386532_rtwpvjdqofn.js',
 };

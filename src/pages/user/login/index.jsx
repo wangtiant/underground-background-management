@@ -195,9 +195,17 @@ class Login extends Component {
             />
           </Tab>
           <div>
-            <Checkbox checked={autoLogin} onChange={this.changeAutoLogin}>
-              <FormattedMessage id="user-login.login.remember-me" />
-            </Checkbox>
+            {/*<Checkbox checked={autoLogin} onChange={this.changeAutoLogin}>*/}
+            {/*<FormattedMessage id="user-login.login.remember-me" />*/}
+            {/*</Checkbox>*/}
+            <a
+              style={{
+                float: 'left',
+              }}
+              href=""
+            >
+              <FormattedMessage id="user-login.login.forgot-password" />
+            </a>
             <Link
               style={{ float: 'right', marginLeft: '1em' }}
               className={styles.register}
@@ -205,14 +213,6 @@ class Login extends Component {
             >
               <FormattedMessage id="user-login.login.signup" />
             </Link>
-            <a
-              style={{
-                float: 'right',
-              }}
-              href=""
-            >
-              <FormattedMessage id="user-login.login.forgot-password" />
-            </a>
           </div>
           <Submit loading={submitting}>
             <FormattedMessage id="user-login.login.login" />
