@@ -32,9 +32,6 @@ const UserLayout = props => {
       })}
     >
       <div className={styles.container}>
-        <div className={styles.lang}>
-          <SelectLang />
-        </div>
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.header}>
@@ -47,7 +44,6 @@ const UserLayout = props => {
           </div>
           {children}
         </div>
-        <DefaultFooter />
       </div>
     </DocumentTitle>
   );
