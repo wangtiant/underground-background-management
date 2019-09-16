@@ -194,18 +194,14 @@ class Login extends Component {
               ]}
             />
           </Tab>
-          <div>
+          <div className={styles.between}>
             {/*<Checkbox checked={autoLogin} onChange={this.changeAutoLogin}>*/}
             {/*<FormattedMessage id="user-login.login.remember-me" />*/}
             {/*</Checkbox>*/}
-            <a style={{ float: 'left', fontWeight: 600 }} href="">
+            <a href="">
               <FormattedMessage id="user-login.login.forgot-password" />
             </a>
-            <Link
-              style={{ float: 'right', marginLeft: '1em', fontWeight: 600 }}
-              className={styles.register}
-              to="/user/register"
-            >
+            <Link className={styles.register} to="/user/register">
               <FormattedMessage id="user-login.login.signup" />
             </Link>
           </div>
